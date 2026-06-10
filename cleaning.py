@@ -45,7 +45,7 @@ def clean_data(input_file, output_file):
 
         # 4. PII Masking: Remove name and mask email
         # TODO: Remove the 'name' field from the item
-        del item['name']
+        del item['name'] 
             
         # TODO: Mask the 'email' field using the mask_email function
         item['email'] = mask_email(item['email'])
